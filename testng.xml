@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Insider QA Assessment Suite" verbose="1">
+
+    <!-- UI Tests -->
+    <test name="UI Tests - Insider Careers">
+        <parameter name="browser" value="${browser:-chrome}"/>
+        <classes>
+            <class name="com.insider.ui.InsiderCareerTest"/>
+        </classes>
+    </test>
+
+    <!-- API Tests -->
+    <test name="API Tests - Petstore">
+        <classes>
+            <class name="com.insider.api.PetStoreApiTest"/>
+        </classes>
+    </test>
+
+</suite>
